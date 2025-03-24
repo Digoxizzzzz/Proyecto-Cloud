@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Speech Translation</title>
+    <script src="app.js"></script>
+</head>
+<body>
+    <h1>Speech Translation App</h1>
+    <button id="startRecord">Start Recording</button>
+    <button id="stopRecord" disabled>Stop Recording</button>
+    <div>
+        <h3>Original Text:</h3>
+        <p id="originalText"></p>
+    </div>
+    <div>
+        <h3>Translated Text:</h3>
+        <p id="translatedText"></p>
+    </div>
+    <button id="playTranslation">Play Translation</button>
+    
+    <select id="targetLanguage">
+        <option value="es">Spanish</option>
+        <option value="fr">French</option>
+        <option value="de">German</option>
+        <option value="it">Italian</option>
+        <option value="ja">Japanese</option>
+    </select>
+</body>
+</html>
