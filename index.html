@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Traductor de Voz</title>
+</head>
+<body>
+    <h1>Traductor de Voz</h1>
+    <form id="audioForm" method="POST" enctype="multipart/form-data" action="/process">
+        <label for="audio">Sube tu archivo de voz:</label>
+        <input type="file" id="audio" name="audio" accept="audio/wav" required>
+        <label for="language">Idioma de traducción:</label>
+        <select id="language" name="language">
+            <option value="en">Inglés</option>
+            <option value="fr">Francés</option>
+            <option value="de">Alemán</option>
+        </select>
+        <label for="voice">Voz para salida:</label>
+        <select id="voice" name="voice">
+            <option value="en-US-AriaNeural">Inglés (Aria)</option>
+            <option value="fr-FR-DeniseNeural">Francés (Denise)</option>
+            <option value="de-DE-KatjaNeural">Alemán (Katja)</option>
+        </select>
+        <button type="submit">Traducir</button>
+    </form>
+    <div id="result"></div>
+</body>
+</html>
