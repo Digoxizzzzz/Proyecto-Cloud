@@ -1,4 +1,0 @@
-Flask
-requests
-azure-cognitiveservices-speech
-gunicorn
